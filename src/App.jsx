@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Container, Typography, Button, Paper, Box } from "@mui/material";
+import TarjetaDeUsuario from "../src/components/TarjetaDeUsuario/tarjetaDeUsuario.jsx";
+import Carrucel from "../src/components/Carrucel/Carrucel.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fixed>
+      <Typography variant="h4" component="h1" gutterBottom>
+        Bienvenido a Mons Desserts 🍰
+      </Typography>
+      <Button variant="contained" color="primary" sx={{ mt: 3 }}>
+        Explorar Recetas
+      </Button>
+      <TarjetaDeUsuario></TarjetaDeUsuario>
+      <Carrucel></Carrucel>
+    </Container>
   );
 }
 
