@@ -1,8 +1,12 @@
 import * as React from 'react';
 import AspectRatio from '@mui/joy/AspectRatio';
-import Box from '@mui/joy/Box';
 import Typography from '@mui/joy/Typography';
 import Card from '@mui/joy/Card';
+import List from '@mui/joy/List';
+import ListDivider from '@mui/joy/ListDivider';
+import ListItem from '@mui/joy/ListItem';
+import ListItemContent from '@mui/joy/ListItemContent';
+import ListItemButton from '@mui/joy/ListItemButton';
 
 const data = [
   {
@@ -22,37 +26,31 @@ const data = [
   },
 ];
 
-export default function CarouselRatio() {
+export default function ListStackRatio() {
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        gap: 1,
-        py: 1,
-        overflow: 'auto',
-        width: 343,
-        scrollSnapType: 'x mandatory',
-        '& > *': {
-          scrollSnapAlign: 'center',
-        },
-        '::-webkit-scrollbar': { display: 'none' },
-      }}
-    >
-      {data.map((item) => (
-        <Card orientation="horizontal" size="sm" key={item.title} variant="outlined">
-          <AspectRatio ratio="1" sx={{ minWidth: 60 }}>
-            <img
-              srcSet={`${item.src}?h=120&fit=crop&auto=format&dpr=2 2x`}
-              src={`${item.src}?h=120&fit=crop&auto=format`}
-              alt={item.title}
-            />
-          </AspectRatio>
-          <Box sx={{ whiteSpace: 'nowrap', mx: 1 }}>
-            <Typography level="title-md">{item.title}</Typography>
-            <Typography level="body-sm">{item.description}</Typography>
-          </Box>
-        </Card>
-      ))}
-    </Box>
+    <Card variant="outlined" sx={{ width: 300, p: 0 }}>
+      <List sx={{ py: 'var(--ListDivider-gap)' }}>
+        {data.map((item, index) => (
+          <React.Fragment key={item.title}>
+            <ListItem>
+              <ListItemButton sx={{ gap: 2 }}>
+                <AspectRatio sx={{ flexBasis: 120 }}>
+                  <img
+                    srcSet={`${item.src}?w=120&fit=crop&auto=format&dpr=2 2x`}
+                    src={`${item.src}?w=120&fit=crop&auto=format`}
+                    alt={item.title}
+                  />
+                </AspectRatio>
+                <ListItemContent>
+                  <Typography sx={{ fontWeight: 'md' }}>{item.title}</Typography>
+                  <Typography level="body-sm">{item.description}</Typography>
+                </ListItemContent>
+              </ListItemButton>
+            </ListItem>
+            {index !== data.length - 1 && <ListDivider />}
+          </React.Fragment>
+        ))}
+      </List>
+    </Card>
   );
 }
