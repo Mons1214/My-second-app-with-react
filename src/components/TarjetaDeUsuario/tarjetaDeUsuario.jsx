@@ -1,13 +1,14 @@
 import React from "react";
 import { Card, CardContent, Typography, Avatar, } from "@mui/material";
 
-const TarjetaDeUsuario = () => {
+const TarjetaDeUsuario = ({imagen, titulo, descripcion}) => {
     return (
         <Card sx={{ width:"600px"}}>
             <CardContent>
-                <Avatar></Avatar>
-                <Typography>Nombre</Typography>
-                <Typography>Descripcion</Typography>
+                <Avatar alt="Remy Sharp" src={imagen} >
+                </Avatar>
+                <Typography>{titulo}</Typography>
+                <Typography>{descripcion}</Typography>
             </CardContent>
         </Card>
     )
