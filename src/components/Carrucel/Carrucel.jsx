@@ -11,23 +11,23 @@ import Box from '@mui/joy/Box'; // Importar Box para el contenedor
 
 export default function ListStackRatio({data = []}) {
   return (
-    <Box sx={{ display: 'flex', justifyContent: 'center', p: 2 }}> 
-      <Card variant="outlined" sx={{ width: 1, p: 0 }}>
-        <List sx={{ py: 'var(--ListDivider-gap)' }}>
+    <Box sx={{ width:"300px ", height:"350px", maxHeight: "350px", border:"1px solid"}}> 
+      <Card>
+        <List sx={{ maxHeight: "350px", overflowY: "scroll", border: "0px solid" }}>
           {data.map((item, index) => (
             <React.Fragment key={item.title}>
               <ListItem>
-                <ListItemButton sx={{ gap: 2 }}>
-                  <AspectRatio sx={{ flexBasis: 120 }}>
+                <ListItemButton sx={{ border: "0px solid", gap: 2 }}>
+                  <AspectRatio sx={{ border: "8px solid", flexBasis: 120 }}>
                     <img
                       srcSet={`${item.src}?w=120&fit=crop&auto=format&dpr=2 2x`}
                       src={`${item.src}?w=120&fit=crop&auto=format`}
                       alt={item.title}
                     />
                   </AspectRatio>
-                  <ListItemContent>
-                    <Typography sx={{ fontWeight: 'md' }}>{item.title}</Typography>
-                    <Typography level="body-sm">{item.description}</Typography>
+                  <ListItemContent sx={{ border: "0px solid" }}>
+                    <Typography color="primary" sx={{ }}>{item.title}</Typography>
+                    <Typography color="neutral" sx={{ border: "0px solid" }} level="body-sm">{item.description}</Typography>
                   </ListItemContent>
                 </ListItemButton>
               </ListItem>

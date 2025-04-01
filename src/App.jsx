@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Button, Paper, Box } from "@mui/material";
+import { Typography, Button, Paper, Box } from "@mui/material";
 import TarjetaDeUsuario from "../src/components/TarjetaDeUsuario/tarjetaDeUsuario.jsx";
 import Carrucel from "../src/components/Carrucel/Carrucel.jsx";
 
@@ -42,18 +42,17 @@ function App() {
 
 
   return (
-    <Container fixed>
+    <Box sx={{ border:"1px solid", display:"flex", flexFlow:"column"}}>
       <Typography variant="h4" component="h1" gutterBottom>
         Bienvenido a Mons Desserts 🍰
       </Typography>
-      <Button variant="contained" color="primary" sx={{ mt: 3 }}>
-        Explorar Recetas
-      </Button>
       <TarjetaDeUsuario imagen={"https://i.pinimg.com/736x/d7/32/b4/d732b4b4c1fa2062cb537f778c168871.jpg"} titulo={"Napolitano"} descripcion={"El flan napolitano, con su irresistible combinación de textura cremosa y caramelo dorado, ha conquistado mesas alrededor del mundo y se ha convertido en un favorito indiscutible en la gastronomía latinoamericana"}></TarjetaDeUsuario>
       <TarjetaDeUsuario imagen={"https://i.pinimg.com/736x/a0/b0/73/a0b07350e68d0bb5523ad4231c4f93f0.jpg"} titulo={"Cafe"} descripcion={"El flan se puede preparar con leche de coco, queso tipo crema, con un toque de naranja o limón, con leche condensada o con café. En este último caso, debes de utilizar unos buenos granos, preferentemente de la variedad arábica y tostado natural, cuya esencia engalana la receta."}/>
-      <Carrucel data={Postres}></Carrucel>
-      <Carrucel data={Helados}></Carrucel>
-    </Container>
+      <Box sx={{ display:"flex", flexFlow:"row"}}>
+        <Carrucel data={Postres}></Carrucel>
+        <Carrucel data={Helados}></Carrucel>
+      </Box>
+    </Box>
   );
 }
 
