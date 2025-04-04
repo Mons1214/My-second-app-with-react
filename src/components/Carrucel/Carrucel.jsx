@@ -13,21 +13,21 @@ export default function ListStackRatio({data = []}) {
   return (
     <Box sx={{ width:"300px ", height:"350px", maxHeight: "350px", border:"1px solid"}}> 
       <Card>
-        <List sx={{ maxHeight: "350px", overflowY: "scroll", border: "0px solid" }}>
+        <List sx={{ maxHeight: "350px", overflowY: "scroll" }}>
           {data.map((item, index) => (
             <React.Fragment key={item.title}>
               <ListItem>
-                <ListItemButton sx={{ border: "0px solid", gap: 2 }}>
-                  <AspectRatio sx={{ border: "8px solid", flexBasis: 120 }}>
+                <ListItemButton sx={{ gap: 2 }}>
+                  <AspectRatio sx={{  flexBasis: 120 }}>
                     <img
                       srcSet={`${item.src}?w=120&fit=crop&auto=format&dpr=2 2x`}
                       src={`${item.src}?w=120&fit=crop&auto=format`}
                       alt={item.title}
                     />
                   </AspectRatio>
-                  <ListItemContent sx={{ border: "0px solid" }}>
-                    <Typography color="primary" sx={{ }}>{item.title}</Typography>
-                    <Typography color="neutral" sx={{ border: "0px solid" }} level="body-sm">{item.description}</Typography>
+                  <ListItemContent>
+                    <Typography color="primary">{item.title}</Typography>
+                    <Typography color="neutral"  level="body-sm">{item.description}</Typography>
                   </ListItemContent>
                 </ListItemButton>
               </ListItem>

@@ -44,9 +44,6 @@ function App() {
 
   return (
     <Box sx={{ width:"98vw", height:"100uvh", border:"4px solid", display:"flex", flexFlow:"column", alignItems:"center", gap: "1em"}}>
-      <Typography variant="h4" component="h1" gutterBottom>
-        Bienvenido a Mons Desserts 🍰
-      </Typography>
       <Bartext></Bartext>
       <TarjetaDeUsuario 
         imagen={"https://i.pinimg.com/736x/d7/32/b4/d732b4b4c1fa2062cb537f778c168871.jpg"} 
