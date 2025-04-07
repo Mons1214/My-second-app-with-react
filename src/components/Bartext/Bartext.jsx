@@ -10,7 +10,7 @@ function Bartext({ texto }) {
                 backgroundColor: "#880E4F",
                 textAlign: "center",
                 padding: 2,
-                width: "100%",
+                width:"96vw",
                 display: "flex",
                 top: 0,
                 left: 0,
