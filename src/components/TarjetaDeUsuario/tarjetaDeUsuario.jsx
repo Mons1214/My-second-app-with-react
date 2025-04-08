@@ -3,8 +3,8 @@ import { Card, CardContent, Typography, Avatar, } from "@mui/material";
 
 const TarjetaDeUsuario = ({imagen, titulo, descripcion}) => {
     return (
-        <Card sx={{ width:"350px", gap:"3em"}}>
-            <CardContent>
+        <Card sx={{ width:"350px", margin:"10px"}}>
+            <CardContent sx={{display:"flex"}}>
                 <Avatar alt="Remy Sharp" src={imagen} >
                 </Avatar>
                 <Typography>{titulo}</Typography>
