@@ -1,6 +1,6 @@
+
 import React from "react";
 import { Box } from "@mui/material";
-import TarjetaDeUsuario from "../src/components/TarjetaDeUsuario/tarjetaDeUsuario.jsx";
 import CustomCarrucel from "./components/CustomCarrucel/CustomCarrucel.jsx";
 import Bartext from "./components/Bartext/Bartext.jsx";
 
@@ -30,10 +30,42 @@ function App() {
 
 
   return (
-    <Box sx={{ width:"98vw", height:"98vh", display:"flex", flexFlow:"column", alignItems:"center", border: "6px solid"}}>
+    <Box sx={{
+      width: "98vw",
+      height: "2000vh",
+      display: "flex",
+      flexFlow: "column",
+      alignItems: "center",
+    }}>
       <Bartext></Bartext>
-        <CustomCarrucel data={Postres}></CustomCarrucel>
-    </Box>
+
+      <CustomCarrucel data={Postres}></CustomCarrucel>
+
+      <Box sx={{
+        border: "1px solid",
+        width: "100px",
+        height: "100px"
+      }} />
+      <Box sx={{
+        border: "2px solid",
+        width: "200px",
+        height: "200px",
+        borderRadius: "50%"
+      }} />
+      <Box sx={{
+        border: "1px solid",
+        width: "350px",
+        height: "100px"
+      }}></Box>
+      <Box sx={{
+        border: "2 px solid",
+        width: "0",
+        height: "0",
+        borderLeft: "40px solid transparent",
+        borderRight: "40px solid transparent",
+        borderBottom: "80px solid lightblue"
+      }} />
+    </Box >
   );
 }
 

@@ -4,7 +4,14 @@ import TarjetaDeUsuario from '../TarjetaDeUsuario/tarjetaDeUsuario';
 
 function CustomCarrucel({ data = [] }) {
   return (
-    <Box sx={{ display: "flex", alignItems: "center", flexFlow:"column", flexWrap:"wrap", width:"98vw", height:"80vh", border:"1px solid"}}>
+    <Box sx={{ 
+      display: "flex", 
+      alignItems: "center", 
+      flexFlow:"column", 
+      flexWrap:"wrap", 
+      width:"98vw", 
+      height:"80vh"}}>
+        
       {data.map((item) => (
         <>
           <TarjetaDeUsuario
