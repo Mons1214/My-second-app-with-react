@@ -40,12 +40,12 @@ function App() {
       <Bartext></Bartext>
 
       <CustomCarrucel data={Postres}></CustomCarrucel>
-
       <Box sx={{
-        border: "2px solid",
-        width: "100px",
-        height: "100px"
-      }} />
+        border: "1px solid",
+        width: "300px",
+        height: "300px",
+        backgroundColor: "turquoise"
+      }} ></Box>
       <Box sx={{
         width: "200px",
         height: "200px",
@@ -56,16 +56,29 @@ function App() {
         border: "1px solid",
         width: "350px",
         height: "100px",
-        backgroundColor:"azure"
+        backgroundColor: "azure"
 
       }}></Box>
       <Box sx={{
         width: "0",
         height: "0",
         borderTop: "40px solid transparent",
-        borderRight: "80px solid lightblue",
+        borderRight: "80px solid violet",
         borderBottom: "40px solid transparent"
       }} />
+      <Box sx={{
+        border: "1px solid",
+        width: "300px",
+        height: "300px",
+        backgroundColor: "turquoise"
+      }} >
+        <Box sx={{
+          borderRadius: "50%",
+          width: "100px",
+          height: "100px",
+          backgroundColor: "aliceblue"
+        }} />
+      </Box>
     </Box >
   );
 }
