@@ -42,28 +42,29 @@ function App() {
       <CustomCarrucel data={Postres}></CustomCarrucel>
 
       <Box sx={{
-        border: "1px solid",
+        border: "2px solid",
         width: "100px",
         height: "100px"
       }} />
       <Box sx={{
-        border: "2px solid",
         width: "200px",
         height: "200px",
-        borderRadius: "50%"
+        borderRadius: "50%",
+        backgroundColor: "turquoise"
       }} />
       <Box sx={{
         border: "1px solid",
         width: "350px",
-        height: "100px"
+        height: "100px",
+        backgroundColor:"azure"
+
       }}></Box>
       <Box sx={{
-        border: "2 px solid",
         width: "0",
         height: "0",
-        borderLeft: "40px solid transparent",
-        borderRight: "40px solid transparent",
-        borderBottom: "80px solid lightblue"
+        borderTop: "40px solid transparent",
+        borderRight: "80px solid lightblue",
+        borderBottom: "40px solid transparent"
       }} />
     </Box >
   );
