@@ -70,13 +70,17 @@ function App() {
         border: "1px solid",
         width: "300px",
         height: "300px",
-        backgroundColor: "turquoise"
+        backgroundColor: "turquoise",
+        display:"flex",
+        alignItems:"center",
+        justifyContent:"center"
       }} >
         <Box sx={{
           borderRadius: "50%",
-          width: "100px",
-          height: "100px",
-          backgroundColor: "aliceblue"
+          width: "100%",
+          height: "100%",
+          backgroundColor: "aliceblue",
+
         }} />
       </Box>
     </Box >
