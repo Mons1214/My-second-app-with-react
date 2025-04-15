@@ -40,25 +40,30 @@ function App() {
       <Bartext></Bartext>
 
       <CustomCarrucel data={Postres}></CustomCarrucel>
+      Cuadrado
       <Box sx={{
         border: "1px solid",
         width: "300px",
         height: "300px",
-        backgroundColor: "turquoise"
+        backgroundColor: "antiquewhite"
       }} ></Box>
+
+      Circulo
       <Box sx={{
         width: "200px",
         height: "200px",
         borderRadius: "50%",
-        backgroundColor: "turquoise"
+        backgroundColor: "aqua"
       }} />
+      Rectangulo
       <Box sx={{
         border: "1px solid",
         width: "350px",
         height: "100px",
         backgroundColor: "azure"
-
       }}></Box>
+
+      Triangulo
       <Box sx={{
         width: "0",
         height: "0",
@@ -66,24 +71,42 @@ function App() {
         borderRight: "80px solid violet",
         borderBottom: "40px solid transparent"
       }} />
+
+      Cuadrado/Circulo
       <Box sx={{
         border: "1px solid",
         width: "300px",
         height: "300px",
         backgroundColor: "turquoise",
-        display:"flex",
-        alignItems:"center",
-        justifyContent:"center"
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
       }} >
         <Box sx={{
           borderRadius: "50%",
           width: "100%",
           height: "100%",
           backgroundColor: "aliceblue",
-
         }} />
       </Box>
-    </Box >
+      Cuadrado/Triangulo
+      <Box sx={{
+        width: "300px",
+        height: "300px",
+        backgroundColor: "turquoise",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }} >
+        <Box sx={{
+          width: "0",
+          height: "0",
+          borderTop: "40px solid transparent",
+          borderRight: "80px solid violet",
+          borderBottom: "40px solid transparent"
+        }} />
+      </Box>
+    </Box>
   );
 }
 
