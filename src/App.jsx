@@ -128,9 +128,7 @@ function App() {
         }} />
       </Box>
 
-      <TextField>
-        Circulo/Cuadrado
-      </TextField>
+      Circulo/Cuadrado
       <Box sx={{
         width: "200px",
         height: "200px",
@@ -146,9 +144,33 @@ function App() {
         height: "60%"
         }} />
       </Box>
-      
+
+
+      Componente
+      <Box sx={{ 
+        border:"1px solid",
+        width: "500px",
+        height: "200px",
+        display:"flex",
+        alignItems: "flex-end",
+        justifyContent: "flex-end"
+      }}>
+        <Box sx={{
+          border:"1px solid",
+          width: "250px",
+          height:"200px",
+        }}>
+          <Box sx={{
+            border:"1px solid",
+            width:"250px",
+            height:"100px"
+          }}
+          ></Box>
+        </Box>
+      </Box>
     </Box>
   );
 }
+
 
 export default App;
