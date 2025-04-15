@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, TextField } from "@mui/material";
 import CustomCarrucel from "./components/CustomCarrucel/CustomCarrucel.jsx";
 import Bartext from "./components/Bartext/Bartext.jsx";
 
@@ -91,21 +91,62 @@ function App() {
       </Box>
       Cuadrado/Triangulo
       <Box sx={{
-        width: "300px",
-        height: "300px",
-        backgroundColor: "turquoise",
+        width: "100px",
+        height: "100px",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
       }} >
         <Box sx={{
           width: "0",
           height: "0",
           borderTop: "40px solid transparent",
           borderRight: "80px solid violet",
-          borderBottom: "40px solid transparent"
+          borderBottom: "40px solid transparent",
+          backgroundColor: "cyan"
         }} />
       </Box>
+
+      <TextField>
+      Circulo/Triangulo
+      </TextField>
+      <Box sx={{
+        width: "100px",
+        height: "100px",
+        borderRadius: "50%",
+        display: "flex",
+        border: "1px solid",
+        justifyContent:"center"
+      }} >
+        <Box sx={{
+          border: "1px solid",
+          width: "0",
+          height: "0",
+          borderLeft: "40px solid transparent",
+          borderRight: "40px solid transparent",
+          borderBottom: "80px solid lightblue"
+        }} />
+      </Box>
+
+      <TextField>
+        Circulo/Cuadrado
+      </TextField>
+      <Box sx={{
+        width: "200px",
+        height: "200px",
+        borderRadius: "50%",
+        display: "flex",
+        border: "1px solid",
+        justifyContent:"center",
+        alignItems: "center"
+      }} >
+        <Box sx={{
+        border: "1px solid",
+        width: "60%",
+        height: "60%"
+        }} />
+      </Box>
+      
     </Box>
   );
 }
