@@ -108,7 +108,7 @@ function App() {
       </Box>
 
       <TextField>
-      Circulo/Triangulo
+        Circulo/Triangulo
       </TextField>
       <Box sx={{
         width: "100px",
@@ -116,7 +116,7 @@ function App() {
         borderRadius: "50%",
         display: "flex",
         border: "1px solid",
-        justifyContent:"center"
+        justifyContent: "center"
       }} >
         <Box sx={{
           border: "1px solid",
@@ -135,40 +135,133 @@ function App() {
         borderRadius: "50%",
         display: "flex",
         border: "1px solid",
-        justifyContent:"center",
+        justifyContent: "center",
         alignItems: "center"
       }} >
         <Box sx={{
-        border: "1px solid",
-        width: "60%",
-        height: "60%"
+          border: "1px solid",
+          width: "60%",
+          height: "60%"
         }} />
       </Box>
 
 
       Componente
-      <Box sx={{ 
-        border:"1px solid",
+      <Box sx={{
+        border: "1px solid",
         width: "500px",
         height: "200px",
-        display:"flex",
+        display: "flex",
         alignItems: "flex-end",
         justifyContent: "flex-end"
       }}>
         <Box sx={{
-          border:"1px solid",
+          border: "1px solid",
           width: "250px",
-          height:"200px",
+          height: "200px",
         }}>
           <Box sx={{
-            border:"1px solid",
-            width:"250px",
-            height:"100px"
+            border: "1px solid",
+            width: "250px",
+            height: "100px"
           }}
           ></Box>
         </Box>
       </Box>
+
+      Componente de Componentes
+      <Box sx={{
+        width: "500px",
+        height: "200px",
+        display: "flex",
+        alignItems: "flex-end",
+        justifyContent: "flex-end",
+        backgroundColor: "violet"
+      }}>
+        <Box sx={{
+          width: "250px",
+          height: "200px",
+          backgroundColor: "turquoise"
+        }}>
+          <Box sx={{
+            width: "250px",
+            height: "100px",
+            backgroundColor: "tomato"
+          }}>
+            <Box sx={{
+              width: "250px",
+              height: "100px",
+              display: "flex",
+              alignItems: "flex-end",
+              justifyContent: "flex-end",
+              backgroundColor: "teal"
+            }}>
+              <Box sx={{
+                width: "125px",
+                height: "100px",
+                display: "flex",
+                alignItems: "flex-end",
+                justifyContent: "flex-end",
+                backgroundColor: "tan"
+              }}>
+                <Box sx={{
+                  width: "100%",
+                  height: "50%",
+                  backgroundColor: "steelblue"
+                }}></Box>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+
+
+
+
+      Nuevecitoo de Paqueteee
+      <Box sx={{
+        width: "700px",
+        height: "350px",
+        display: "flex",
+        backgroundColor: "steelblue"        
+      }}>
+        <Box sx={{
+          width:"350px",
+          height:"350px",
+          display:"flex",
+          backgroundColor:"tomato",
+          alignItems:"end"
+        }}
+        >
+          <Box sx={{
+            width:"350px",
+            height:"175px",
+            backgroundColor:"thistle",
+            display:"flex",
+            alignItems:"center"
+          }}>
+            <Box sx={{
+              width:"175px",
+              height:"175px",
+              backgroundColor:"skyblue"
+            }}>
+              <Box sx={{
+                width:"175px",
+                height:"88px",
+                display:"flex",
+                backgroundColor:"sandybrown"
+              }}>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
     </Box>
+
+
+
+
+
+    </Box >
   );
 }
 
