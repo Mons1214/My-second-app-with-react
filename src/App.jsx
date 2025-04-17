@@ -1,8 +1,9 @@
 
 import React from "react";
-import { Box, TextField } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import CustomCarrucel from "./components/CustomCarrucel/CustomCarrucel.jsx";
 import Bartext from "./components/Bartext/Bartext.jsx";
+import EjericiosDeComponentes from "./components/Ejercicios/Ejercicios.jsx"
 
 function App() {
   const Postres = [
@@ -40,7 +41,11 @@ function App() {
       <Bartext></Bartext>
 
       <CustomCarrucel data={Postres}></CustomCarrucel>
-      Cuadrado
+
+      <EjericiosDeComponentes></EjericiosDeComponentes>
+
+
+      <Typography>Cuadrado</Typography>
       <Box sx={{
         border: "1px solid",
         width: "300px",
@@ -48,14 +53,15 @@ function App() {
         backgroundColor: "antiquewhite"
       }} ></Box>
 
-      Circulo
+      <Typography>Circulo</Typography>
       <Box sx={{
         width: "200px",
         height: "200px",
         borderRadius: "50%",
         backgroundColor: "aqua"
       }} />
-      Rectangulo
+
+      <Typography>Rectangulo</Typography>
       <Box sx={{
         border: "1px solid",
         width: "350px",
@@ -63,7 +69,7 @@ function App() {
         backgroundColor: "azure"
       }}></Box>
 
-      Triangulo
+      <Typography>Triangulo</Typography>
       <Box sx={{
         width: "0",
         height: "0",
@@ -72,7 +78,7 @@ function App() {
         borderBottom: "40px solid transparent"
       }} />
 
-      Cuadrado/Circulo
+      <Typography>Cuadrado/Circulo</Typography>
       <Box sx={{
         border: "1px solid",
         width: "300px",
@@ -89,7 +95,8 @@ function App() {
           backgroundColor: "aliceblue",
         }} />
       </Box>
-      Cuadrado/Triangulo
+
+      <Typography>Cuadrado/Triangulo</Typography>
       <Box sx={{
         width: "100px",
         height: "100px",
@@ -107,16 +114,16 @@ function App() {
         }} />
       </Box>
 
-      <TextField>
-        Circulo/Triangulo
-      </TextField>
+
+        <Typography>Circulo/Triangulo</Typography>
       <Box sx={{
         width: "100px",
         height: "100px",
         borderRadius: "50%",
         display: "flex",
         border: "1px solid",
-        justifyContent: "center"
+        justifyContent: "center",
+        backgroundColor: "palevioletred"
       }} >
         <Box sx={{
           border: "1px solid",
@@ -124,11 +131,13 @@ function App() {
           height: "0",
           borderLeft: "40px solid transparent",
           borderRight: "40px solid transparent",
-          borderBottom: "80px solid lightblue"
+          borderBottom: "80px solid lightblue",
+          borderTop:"10px"
         }} />
       </Box>
 
-      Circulo/Cuadrado
+
+      <Typography>Circulo/Cuadrado</Typography>
       <Box sx={{
         width: "200px",
         height: "200px",
@@ -146,7 +155,7 @@ function App() {
       </Box>
 
 
-      Componente
+      <Typography>Componente</Typography>
       <Box sx={{
         border: "1px solid",
         width: "500px",
@@ -169,7 +178,7 @@ function App() {
         </Box>
       </Box>
 
-      Componente de Componentes
+      <Typography>Componente de Componentes</Typography>
       <Box sx={{
         width: "500px",
         height: "200px",
@@ -218,44 +227,63 @@ function App() {
 
 
 
-      Nuevecitoo de Paqueteee
+      <Typography>Nuevecitoo de Paqueteee</Typography>
       <Box sx={{
         width: "700px",
         height: "350px",
         display: "flex",
-        backgroundColor: "steelblue"        
+        backgroundColor: "steelblue",
+        display:"flex",
+        textAlign:"justify",
       }}>
         <Box sx={{
-          width:"350px",
-          height:"350px",
-          display:"flex",
-          backgroundColor:"tomato",
-          alignItems:"end"
+          width: "350px",
+          height: "350px",
+          display: "flex",
+          backgroundColor: "tomato",
+          alignItems: "end"
         }}
         >
           <Box sx={{
-            width:"350px",
-            height:"175px",
-            backgroundColor:"thistle",
-            display:"flex",
-            alignItems:"center"
+            width: "350px",
+            height: "175px",
+            backgroundColor: "thistle",
+            display: "flex",
+            alignItems: "center"
           }}>
             <Box sx={{
-              width:"175px",
-              height:"175px",
-              backgroundColor:"skyblue"
+              width: "175px",
+              height: "175px",
+              backgroundColor: "skyblue"
             }}>
               <Box sx={{
-                width:"175px",
-                height:"88px",
-                display:"flex",
-                backgroundColor:"sandybrown"
+                width: "175px",
+                height: "88px",
+                display: "flex",
+                backgroundColor: "sandybrown"
               }}>
+                <Box sx={{
+                  width: "175px",
+                  height: "44px",
+                  backgroundColor: "plum"
+                }}>
+                  <Box sx={{
+                    width: "175px",
+                    height: "22px",
+                    backgroundColor: "slateblue"
+                  }}></Box>
+                </Box>
               </Box>
             </Box>
           </Box>
         </Box>
-    </Box>
+        <Typography sx={{
+          width:"350px",
+          display:"flex",
+          alignItems:"center",
+          justifyContent:"center"
+        }}>Este es el texto que se va a ver</Typography>
+      </Box>
 
 
 
