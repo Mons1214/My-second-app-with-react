@@ -3,9 +3,15 @@ import React from "react";
 
 
 
-const EjericiosDeComponentes = () => {
+const EjericiosDeComponentes = ({display}) => {
+
+
+        
+
     return (
-        <Box>
+        <Box sx={{
+            display:"none"
+        }}>
             <Typography>Cuadrado</Typography>
             <Box sx={{
                 border: "1px solid",
