@@ -6,7 +6,6 @@ import React from "react";
 const EjericiosDeComponentes = ({display}) => {
 
 
-        
 
     return (
         <Box sx={{
