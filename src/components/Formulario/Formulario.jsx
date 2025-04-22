@@ -1,15 +1,24 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import { Box, TextField, Typography } from '@mui/material';
 
 
 
 
 const Formulario = () => {
+    const [stateNumber, setStateNumber] = useState(0)
+    let counter = 0;
+    const sumar = () => {
+        let suma = stateNumber + 1
+        setStateNumber(suma)
+        console.log(stateNumber);
+    };
+
+
     return (
         <Box sx={{
             border: "1px solid",
             width: "50vw",
-            height: "80vh",
+            height: "400px",
             display: "flex",
             flexFlow:"column"
         }}>
@@ -20,15 +29,15 @@ const Formulario = () => {
 
             }}>Formulario:</Typography>
             <TextField sx={{
-                backgroundColor:"slateblue"
+                backgroundColor:"plum"
             }}
              id="filled-basic" color="secondary" label="Name" variant="filled" />
             <TextField sx={{
-                backgroundColor:"plum"
+                backgroundColor:"lightsalmon"
             }}
              id="filled-basic" color="warning" label="Age" variant="filled" />
             <TextField sx={{
-                backgroundColor:"mediumslateblue"
+                backgroundColor:"yellowgreen"
             }}
              id="filled-basic" color="success" label="Last-Name" variant="filled" />
             <TextField  sx={{
@@ -36,12 +45,17 @@ const Formulario = () => {
             }}
             id="filled-basic" color="secondary" label="Email" variant="filled" />
             <TextField sx={{
-                backgroundColor:"deeppink"
+                backgroundColor:"sandybrown"
             }}
             
             id="filled-basic" color="warning" label="Telephone" variant="filled" />
 
+        <Box>
+            <Typography>{stateNumber}</Typography>
+            <button onClick={sumar}>Presiona aqui</button>
         </Box>
+        </Box>
+        
     );
 }
 

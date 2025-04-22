@@ -12,9 +12,10 @@ function CustomCarrucel({ data = [] }) {
       width:"98vw", 
       height:"80vh"}}>
         
-      {data.map((item) => (
+      {data.map((item, index) => (
         <>
           <TarjetaDeUsuario
+            key={index}
             imagen={item.src}
             titulo={item.title}
             descripcion={item.description}
