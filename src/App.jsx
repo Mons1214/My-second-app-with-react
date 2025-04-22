@@ -1,9 +1,11 @@
 
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import CustomCarrucel from "./components/CustomCarrucel/CustomCarrucel.jsx";
 import Bartext from "./components/Bartext/Bartext.jsx";
-import EjericiosDeComponentes from "./components/Ejercicios/Ejercicios.jsx"
+import EjericiosDeComponentes from "./components/Ejercicios/Ejercicios.jsx";
+import Formulario from "./components/Formulario/Formulario.jsx";
+
 
 function App() {
   const Postres = [
@@ -40,7 +42,7 @@ function App() {
   return (
     <Box sx={{
       width: "98vw",
-      height: "1000vh",
+      height: "500vh",
       display: "flex",
       flexFlow: "column",
       alignItems: "center",
@@ -51,6 +53,7 @@ function App() {
 
       <EjericiosDeComponentes display={condition}></EjericiosDeComponentes>
 
+      <Formulario></Formulario>
 
     </Box >
   );
