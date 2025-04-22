@@ -1,19 +1,9 @@
-import React, { useState } from 'react';
 import { Box, TextField, Typography } from '@mui/material';
 
 
 
 
 const Formulario = () => {
-    const [stateNumber, setStateNumber] = useState(0)
-    let counter = 0;
-    const sumar = () => {
-        let suma = stateNumber + 1
-        setStateNumber(suma)
-        console.log(stateNumber);
-    };
-
-
     return (
         <Box sx={{
             border: "1px solid",
@@ -49,13 +39,7 @@ const Formulario = () => {
             }}
             
             id="filled-basic" color="warning" label="Telephone" variant="filled" />
-
-        <Box>
-            <Typography>{stateNumber}</Typography>
-            <button onClick={sumar}>Presiona aqui</button>
         </Box>
-        </Box>
-        
     );
 }
 

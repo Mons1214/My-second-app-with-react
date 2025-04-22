@@ -5,6 +5,7 @@ import CustomCarrucel from "./components/CustomCarrucel/CustomCarrucel.jsx";
 import Bartext from "./components/Bartext/Bartext.jsx";
 import EjericiosDeComponentes from "./components/Ejercicios/Ejercicios.jsx";
 import Formulario from "./components/Formulario/Formulario.jsx";
+import Contador from "./components/Contador/Contador.jsx";
 
 
 function App() {
@@ -54,6 +55,8 @@ function App() {
       <EjericiosDeComponentes display={condition}></EjericiosDeComponentes>
 
       <Formulario></Formulario>
+
+      <Contador></Contador>
 
     </Box >
   );
